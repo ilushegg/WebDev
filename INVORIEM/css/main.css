@@ -240,3 +240,38 @@ body {
     width: 100%;
     vertical-align: top;
 }
+
+/* Footer */
+
+.footer {
+    padding: 162px 0 82px;
+    color: #4E5152;
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.footer a {
+    color: #4E5152;
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    display: flex;
+    column-gap: 104px;
+}
+
+.footer__email {
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 26px;
+}
