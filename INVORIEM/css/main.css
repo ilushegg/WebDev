@@ -1,0 +1,126 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import "./fonts/Gilroy/stylesheet.css";
+
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1750px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    background-color: #EEF6FA;
+    background-image: url("./../img/header/header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.header__top {
+    padding: 44px 0;
+    margin-bottom: 126px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__logo {
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 118px;
+
+}
+.link {
+    font-size: 20px;
+    font-weight: 800;
+    color: #114455;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    padding-right: 72px;
+    border: 1px solid #114455;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #114455;
+    position: relative;
+    transition: .3s;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("./../img/icons/arrow-right-black.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #114455;
+    color: #fff;
+}
+
+.btn:active {
+    top: 1px;
+}
+
+.btn:hover::after {
+    background-image: url("./../img/icons/arrow-right-white.svg");
+}
+
+.btn--big {
+    padding: 14px 32px;
+    padding-right: 80px;
+    color: #fff;
+}
+
+.btn--dark {
+    background-color: #114455;
+}
+
+.btn--dark:hover {
+    background-color: #000;
+}
+
+.btn--dark::after {
+    background-image: url("./../img/icons/arrow-right-white.svg");
+}
+
+.header__content {
+    max-width: 1060px;
+}
+.header__title {
+    max-width: 734px;
+    font-size: 80px;
+    font-weight: 800;
+    color: #114455;
+    margin-bottom: 48px;
+}
+.header__text {
+    margin-bottom: 72px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 34px;
+    color: #4E5152;
+}
+.header__text p + p {
+    margin-top: 1em;
+}
+.header__btn {
+}
