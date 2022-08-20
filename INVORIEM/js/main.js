@@ -1,7 +1,22 @@
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         dots: false,
-        margin: 48
+        responsive : {
+
+            0 : {
+                items: 2,
+                margin: 32,
+            },
+
+            601 : {
+                items: 3
+            },
+
+            1001 : {
+                items: 3,
+                margin: 48,
+            }
+        }
     });
   });
 
