@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import "./fonts/Gilroy/stylesheet.css";
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Gilroy', sans-serif;
@@ -29,6 +32,7 @@ body {
     background-image: url("./../img/header/header-bg.jpg");
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 
 .header__top {
@@ -40,7 +44,9 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.nav__logo {
+ 
+.nav__btn {
+    display: none;
 }
 
 .nav__list {
@@ -118,6 +124,10 @@ body {
     max-width: 1060px;
 }
 
+.header__content-mobile {
+    display: none;
+}
+
 .header__title {
     max-width: 734px;
     font-size: 80px;
@@ -130,11 +140,19 @@ body {
     margin-bottom: 72px;
     font-family: 'Work Sans', sans-serif;
     font-size: 34px;
-    color: #4E5152;
+    line-height: 1.57;
+    color: rgba(31, 31, 31, 0.7);
 }
 
 .header__text p + p {
     margin-top: 1em;
+}
+
+.header__arrows {
+    position: absolute;
+    bottom: 59px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Case Studies */
