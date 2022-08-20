@@ -33,6 +33,10 @@ body {
     display: none;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -235,6 +239,7 @@ body {
 .video-overlay::after {
     content: "";
     position: absolute;
+    z-index: 8;
     left: 0;
     top: 0;
     width: 100%;
@@ -251,13 +256,16 @@ body {
 }
 
 .video__picture {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
+    z-index: 7;
 }
 
 .video__object {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
     vertical-align: top;
 }
 

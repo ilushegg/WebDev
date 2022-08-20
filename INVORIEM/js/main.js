@@ -27,7 +27,7 @@ $(document).ready(function(){
 
   videoWrapper.addEventListener("click", function () {
     if (videoFile.paused) {
-        videoPicture.classList.add("none");
+        videoPicture.classList.add("hidden");
         videoWrapper.classList.remove("video-overlay");
         videoBtn.classList.add("none")
         videoFile.play();
