@@ -6,15 +6,28 @@ body {
     font-weight: 400;
 }
 
+.none {
+    display: none;
+}
+
 .container {
     max-width: 1369px;
     padding: 0 15px;
     margin: auto;
 }
 
+.title {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #01996d;
+    margin-bottom: 30px;
+}
+
 .text {
     font-size: 20px;
     color: #484848;
+    line-height: 150%;
 }
 
 .button {
@@ -116,11 +129,7 @@ body {
 }
 
 .header-title {
-    font-family: "Georgia", sans-serif;
-    font-weight: 700;
     font-size: 65px;
-    color: #01996d;
-    margin-bottom: 30px;
 }
 
 .header-text {
@@ -130,4 +139,72 @@ body {
 .header-btn a{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.cards {
+    margin-top: 169px;
+    margin-bottom: 51px;
+}
+
+.cards__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.cards__top-title {
+    max-width: 584px;
+    width: 100%;
+    margin-right: 136px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #424242;
+}
+
+.cards__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:nth-child(2) {
+    margin-top: 300px;
+}
+
+.card {
+    max-width: 390px;
+    max-height: 937px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    position: relative;
+}
+
+.card-number {
+    font-family: "Georgia", sans-serif;
+    font-weight: 400;
+    font-size: 150px;
+    color: rgba(1, 153, 110, 0.2);
+    line-height: 150%;
+}
+
+.card-title-text {
+    position: absolute;
+    left: 88px;
+    bottom: 50px;
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    max-width: 314px;
+    width: 100%;
+}
+
+.card-text {
+    margin: 10px 0 60px;
+}
+
+.card-picture {
 }
