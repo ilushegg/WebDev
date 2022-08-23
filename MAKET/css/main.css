@@ -1,0 +1,133 @@
+@import "./reset.css";
+@import "./fonts/Lato/stylesheet.css";
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1369px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.text {
+    font-size: 20px;
+    color: #484848;
+}
+
+.button {
+    padding: 13px 50px;
+    background-color: #01996d;
+    border: 1px solid #01996d;
+    border-radius: 4px;
+    color: #fff !important;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: #41be99;
+    border: 1px solid #41be99;
+}
+
+.header {
+    background-color: #F2F4F2;
+    background-image: url("./../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-bottom: 169px;
+}
+
+.header__top {
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    height: 85px;
+    align-items: center;
+    margin-bottom: 175px;
+}
+
+.nav-logo {
+    margin-right: 173px;
+}
+
+.nav-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-list__left,
+.nav-list__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list__left li {
+    margin-right: 36px;
+}
+
+.nav-list__left li a {
+    padding: 32px 18px 33px 18px;
+    transition: .3s;
+}
+
+.nav-list__left li a:hover {
+    background-color: #F6EDED;
+    color: rgb(116, 116, 116);
+}
+
+.nav-list li a {
+    color: #292929;
+    font-size: 20px;
+}
+
+.nav-sign_in {
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.nav-sign_in:hover {
+    border: 1px solid #000;
+}
+
+.nav-btn {
+    margin-left: 35px;
+}
+
+
+.header__content {
+    max-width: 440px;
+    max-height: 895px;
+    margin-bottom: 336px;
+}
+
+.header-title {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    color: #01996d;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    margin-bottom: 55px;
+}
+
+.header-btn a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
