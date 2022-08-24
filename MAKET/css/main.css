@@ -316,3 +316,17 @@ body {
 .product-info-text {
     margin-bottom: 40px;
 }
+
+.footer {
+    padding-top: 85px;
+    padding-bottom: 84px;
+    background-color: #245852;
+}
+
+.footer-list li {
+    margin-bottom: 60px;
+}
+
+.footer-list li a {
+    color: #fff;
+}
