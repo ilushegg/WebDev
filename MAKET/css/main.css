@@ -10,6 +10,10 @@ body {
     display: none;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .container {
     max-width: 1369px;
     padding: 0 15px;
@@ -20,6 +24,7 @@ body {
     font-family: "Georgia", sans-serif;
     font-weight: 700;
     font-size: 50px;
+    line-height: 150%;
     color: #01996d;
     margin-bottom: 30px;
 }
@@ -206,5 +211,60 @@ body {
     margin: 10px 0 60px;
 }
 
-.card-picture {
+.video-container {
+    max-width: 1510px;
+    margin: auto;
+}
+
+.video-info {
+    padding-top: 229px;
+    padding-bottom: 177px; 
+    max-height: 992px;
+    height: 100%;
+    background-color: #245852;
+}
+
+.video-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-info__left {
+    margin-right: 31px;
+}
+
+.video-title {
+    color:  #fff;
+    margin-bottom: 33px;
+}
+
+.video-info-text {
+    color: #fff;
+    margin-bottom: 57px;
+}
+
+.video-object {
+    position: relative;
+}
+
+.video-btn {
+    max-width: 80px;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.video-preview {
+    min-width: 895px;
+    width: 100%;
+}
+
+#video-file {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    max-width: 895px;
+    border-radius: 15px;
 }
