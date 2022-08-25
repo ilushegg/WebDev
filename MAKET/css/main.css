@@ -284,9 +284,12 @@ body {
     justify-content: space-between;
 }
 
+.product-info__left {
+    margin-right: 86px;
+}
+
 .product-seller {
     margin-left: 60px;
-    margin-right: 86px;
     position: relative;
 }
 
