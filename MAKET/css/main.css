@@ -7,7 +7,7 @@ body {
 }
 
 .none {
-    display: none;
+    display: none !important;
 }
 
 .hidden {
@@ -69,6 +69,10 @@ body {
     height: 85px;
     align-items: center;
     margin-bottom: 175px;
+}
+
+.nav-list__btn {
+    display: none;
 }
 
 .nav-logo {
