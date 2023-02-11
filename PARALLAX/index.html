@@ -7,30 +7,37 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="layers">
-      <div class="layers__header">
-        <div class="layers__caption">
-          Welcome to Parallax
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="layers">
+          <div class="layers__header">
+            <div class="layers__caption">
+              Welcome to Parallax
+            </div>
+            <div class="layers__title">
+              Fairy Forest
+            </div>
+          </div>
+          <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+          <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+          <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
         </div>
-        <div class="layers__title">
-          Fairy Forest
+      </header>
+      <article class="article" style="background-image: url(img/dungeon.jpg);">
+        <div class="article__content">
+          <h2 class="article__header">To be continued</h2>
+          <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione delectus totam minima dolor optio aliquid possimus eveniet, reprehenderit illo labore nobis mollitia iste unde fugiat id, deleniti commodi accusamus hic, voluptatibus nulla.</p>
         </div>
-        <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-        <div class="layer layers__title" style="background-image: url(img/layer-middle.png);"></div>
-        <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
-      </div>
+        <div class="copy">© Il'ya Marnopolskiy</div>
+      </article>
     </div>
-  </header>
-  <article class="article" style="background-image: url(img/dungeon.jpg);">
-    <div class="article__content">
-      <h2 class="article__header">To be continued</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione delectus totam minima dolor optio aliquid possimus eveniet, reprehenderit illo labore nobis mollitia iste unde fugiat id, deleniti commodi accusamus hic, voluptatibus nulla.</p>
-    </div>
-    <div class="copy">© Il'ya Marnopolskiy</div>
-  </article>
+  </div>
 </body>
 </html>
